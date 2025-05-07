@@ -8,7 +8,7 @@ app = FastAPI()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://fbridge.netlify.app"],  # Replace "*" with specific domains in production
+    allow_origins=["*"],  # Replace "*" with specific domains in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
